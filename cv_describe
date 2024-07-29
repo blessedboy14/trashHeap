@@ -1,0 +1,46 @@
+9b140839588c412491a85e546598b11d jenkins pass
+
+Hello, my name is Daniil, I've been working as software engineer for 5 years. I'm a backend developer, primarly working with Python. 
+
+Worked with such Python Frameworks as FastAPI, Django, Django Rest Framework, Flask, Celery, ElasticSearch and other tools.
+
+I've worked with both SQL and NoSQL databases. For SQL i used PostgreSQL and for NoSQL i used MongoDB, DynamoDB, BigTable and Redis.
+
+If we talk about cloud providers, i worked with AWS and GCP, AWS primarly.
+
+Of course i'm familiar with message brokers such as RabbitMQ, Kafka, AWS SQS and Google Pub/Sub
+
+So i got a bit involved in DevOps during my working experience and i can say that Docker, Docker Compose, Jenkins, Kubernetes, Terraform aren't new for me.
+
+In source control systems i worked a lot with Git itself, then with GitHub and BitBucket;
+
+
+Let me describe my last project and responsibilities as an example.
+So the last project is an app for asthmatics that allows users to quickly set up necessary reminders for any time, that will prompt you to take a dose. And this app provides ability to choose the right inhaler, based on doctor's recommendations.
+
+One of my responsibilities is to helping with designing and implementing REST API, there are some microservices that we were used in this project: reminders service, notification service, users management service, analysis and reporting service, forms service for choosing right inhaler. 
+My role was to create from scratch two services: users management and reminders. In users management there was a decision to choose Django and DRF, because of django built-in user entity and authentication and permission systems. Data about users was stored in postgresql. My role was to implement endpoints that were handling users sign in and login and handling users management by admins or moderators. In reminders service i used FastAPI to handle users requests for creating new reminders. Apache Kafka was used due to ability for horizontal scaling and ability to store messages inside broker. Data about reminders was stored in mongodb for more flexibility in schema.
+
+Also i took part in creating CI/CD pipeline with Jenkins (we had following steps: build, lint, test and push containers to ECR, then deploy with ECS) my role was to assist in Jenkinsfile creating. I took a small part in creating data pipelines with AWS Lambda functions, aim was to achieve such pipeline that agreggate data from users preferences about medications and then send it to other service for analytics, from reminders about most commonly used reminder time, from inhaler service about popular inhalers. So we choose AWS Lambda cause many our services rely on AWS, so Lambda it's the most easiest and reliable way to communicate with them.
+Deployment of application was implemented with AWS ECS. First we push our containers to AWS ECR, create different tags on them like production, development and etc., define few lifecycle rules, and then we use them in AWS ECS to create and deploy our application. We used EC2 instances to had more flexibility and opportunity to monitor EC2 instances.
+
+Initial AWS infrastracture was defined with help of AWS CDK.
+
+One of my responsibilities is to create an API Gateway with help of AWS. This gateway had aim to call Lambda functions on differenet HTTP requests and to monitor and troubleshoot web server issues usually connected to high CPU usage.
+
+The main challenge for me in this project is to learn about data privacy policies to ensure compilance with HIPAA standart and document intervention protocols and response paths in HIPO diagrams. So to achieve my aim i made a deep dive into medical standards and HIPO diagrams, now i can say that it was interesting experience.
+
+I worked in a team of like 10 people, don't know exactly number. My role was backend engineer, we had 4 backend engineers including me, 3 frontend engineers, 2 QA, and PM;
+The development methodology was Scrum. Sprint was 3 weeks. At the beginning we were defining tasks for sprint and estimating them. Also we had daily mettings that usually takes 30 mins, we were discussing statuses on those mettings. After each sprint we had retrospetive, in which we talk about what was good and what was bad. This helps a lot to improve future team work. So the communication inside team was positive and atmosphere was very supportive.
+
+
+
+Разбавить интродакшн, можно не говорить про source control systems. Самому идти вперед на cv. Про проект, перефразировать. Придумать про ElasticSearch, где юзался. По теху: про скрам почитать, Flask vs FastApi, Insync Replica kafka, гарантия доставки. AWS EC2 vs ECS. Почитать про EC2. Создание Singletone на python. Дескприпторы и слоты по python. 
+
+Soft вопросы, больше про AWS, про деплой, kafka controller, 
+
+Про AWS / Terraform, юзали CDK потому что Terraform знаю только я
+
+Django signals, kafka streams, kafka connection, prefetch_related, select_related
+
+Интро добавить инфы(домены), понравилось про рассказ, больше подробностей про респы, оптимизация БД, 
